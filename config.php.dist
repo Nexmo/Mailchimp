@@ -1,0 +1,14 @@
+<?php
+/**
+ * Configuration Data
+ */
+define('NEXMO_API',    'http://rest.nexmo.com/sms/json?');
+define('NEXMO_KEY',    'XXXXXXXX');
+define('NEXMO_SECRET', 'XXXXXXXX');
+define('NEXMO_FROM',   'XXXXXXXX');
+define('NEXMO_DELAY',  1);
+
+define('CHIMP_API',    'http://us2.api.mailchimp.com/export/1.0/list?');
+define('CHIMP_KEY',    'XXXXXXXX-us2');
+define('CHIMP_LIST',   'XXXXXXXX');
+define('CHIMP_FIELD',  'Phone');
