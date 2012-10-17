@@ -1,4 +1,8 @@
 <?php
+/**
+ * Broadcast SMS Messages to a MailChimp List
+ * Expects configuration details to be defined in config.php
+ */
 error_log('getting config');
 require_once __DIR__ . '/config.php';
 
@@ -6,7 +10,7 @@ require_once __DIR__ . '/config.php';
  * Read MailChimp List into Memory
  */
 error_log('fetching list');
-$url = CHIMP_API . http_build_query(array(
+$url = CHIMP_API . 'export/1.0/list?' . http_build_query(array(
     'apikey' => CHIMP_KEY,
     'id'   => CHIMP_LIST
 ));
